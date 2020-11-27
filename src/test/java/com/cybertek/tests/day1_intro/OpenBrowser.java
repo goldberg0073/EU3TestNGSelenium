@@ -21,6 +21,8 @@ public class OpenBrowser {
 //        driver.get("https://cybertekschool.com");
 //
 //      //this line will allow selenium to automate firefox browser
+
+
         WebDriverManager.firefoxdriver().setup();
 
         WebDriver driver = new FirefoxDriver();
