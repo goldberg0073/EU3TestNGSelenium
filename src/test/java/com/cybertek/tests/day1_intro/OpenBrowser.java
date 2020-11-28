@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class OpenBrowser {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 //        //we have to enter this line every time we want to open chrome
 //        //hey webdrivermanager, can you make chrome ready for me for automation
 //        WebDriverManager.chromedriver().setup();
@@ -28,6 +28,10 @@ public class OpenBrowser {
         WebDriver driver = new FirefoxDriver();
 
         driver.get("https://www.facebook.com");
+        Thread.sleep(3000);
+        driver.close();
+
+
 
     }
 }
